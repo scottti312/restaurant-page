@@ -1,5 +1,5 @@
 import './style.css';
-import Logo from './Logo.png';
+import Logo from './assets/Logo.png';
 
 let content = document.createElement('div');
 let header = document.createElement('div');
