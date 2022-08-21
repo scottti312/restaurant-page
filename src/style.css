@@ -1,0 +1,49 @@
+:root {
+  --main-fg: #C0AB68;
+}
+
+body {
+  margin: 0;
+}
+
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-bottom: 3px solid var(--main-fg);
+  gap: 20px;
+}
+
+#header button {
+  font-size: 20px;
+  border: 0;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  position:relative;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+/* Animation thanks to 30secondsofcode
+ * https://www.30secondsofcode.org/css/s/hover-underline-animation
+ */
+#header button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-fg);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#header button:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
