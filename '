@@ -22,6 +22,6 @@ header.appendChild(contact);
 
 
 document.body.appendChild(header);
-document.body.appendChild(homeContent());
+document.body.appendChild(homeContent);
 
 console.log("This is a test");
