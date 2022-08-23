@@ -7,6 +7,7 @@ import contactContent from './contact.js';
 let header = document.createElement('div');
 let menu = document.createElement('button');
 let contact = document.createElement('button');
+let container = document.createElement('div');
 const restLogo = new Image();
 restLogo.src = Logo;
 restLogo.id = 'logo';
@@ -15,6 +16,7 @@ restLogo.alt = 'grand boulevard'
 header.id = 'header';
 menu.classList.add('menu');
 contact.classList.add('contact');
+container.id = 'container';
 
 
 menu.textContent = 'Menu';
@@ -23,27 +25,33 @@ contact.textContent = 'Contact';
 header.appendChild(menu);
 header.appendChild(restLogo);
 header.appendChild(contact);
+let footer = document.createElement('div');
+footer.id = 'footer';
+footer.innerText = 'Made by Scott Ti. 2022'
+
+container.appendChild(homeContent());
+container.appendChild(footer);
 
 
 document.body.appendChild(header);
-document.body.appendChild(homeContent());
+document.body.appendChild(container);
+
 showDivs(1);
 
-console.log("This is a test");
 
 
 menu.addEventListener('click', () => {
-  document.body.removeChild(document.querySelector('#content'));
-  document.body.appendChild(menuContent());
+  container.removeChild(document.querySelector('#content'));
+  footer.before(menuContent());
 })
 
 restLogo.addEventListener('click', () => {
-  document.body.removeChild(document.querySelector('#content'));
-  document.body.appendChild(homeContent());
+  container.removeChild(document.querySelector('#content'));
+  footer.before(homeContent());
   showDivs(1);
 })
 
 contact.addEventListener('click', () => {
-  document.body.removeChild(document.querySelector('#content'));
-  document.body.appendChild(contactContent());
+  container.removeChild(document.querySelector('#content'));
+  footer.before(contactContent());
 })

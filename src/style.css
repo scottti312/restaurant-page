@@ -1,5 +1,6 @@
 :root {
   --main-fg: #C0AB68;
+  --secondary-fg: #907B28;
 }
 
 body {
@@ -53,9 +54,17 @@ body {
   cursor: pointer;
 }
 
+#container {
+  position: relative;
+  min-height:100vh;
+}
+
 #content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
 }
 
 #content img {
@@ -63,4 +72,72 @@ body {
   width: 1200px;
   height: 700px;
   object-fit:cover;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px 60px 0px;
+}
+
+.slideshow button {
+  width: 50px;
+  background-color: transparent;
+  border: 0;
+  transition-duration: 0.3s;
+}
+
+.slideshow button:hover {
+  background-color: black;
+  color: white;
+}
+
+#content h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+  color: var(--secondary-fg);
+  width: 50vw;
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+#content p {
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+  text-align: center;
+  width: 50vw;
+  line-height: 1.6em;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  padding: 40px;
+  margin: 0;
+}
+
+#hours {
+  font-size: 18px;
+  font-family: proxima-nova;
+  letter-spacing: 1px;
+  padding: 40px 0px 20px 0px;
+  border-top: 1px solid black;
+  width: 30vw;
+  text-align: center;
+  line-height: 2em;
+}
+
+#footer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  color: white;
+  font-size: 18px;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+  height: 8rem;
+  width: 100%;
 }
