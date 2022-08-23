@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -34,9 +34,9 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Restaurant'
-    })
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     title: 'Restaurant'
+  //   })
+  // ],
 };

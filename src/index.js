@@ -1,6 +1,6 @@
 import './style.css';
 import Logo from './assets/Logo.png';
-import homeContent from './home.js';
+import { homeContent, showDivs } from './home.js';
 import menuContent from './menu.js';
 import contactContent from './contact.js';
 
@@ -10,6 +10,7 @@ let contact = document.createElement('button');
 const restLogo = new Image();
 restLogo.src = Logo;
 restLogo.id = 'logo';
+restLogo.alt = 'grand boulevard'
 
 header.id = 'header';
 menu.classList.add('menu');
@@ -26,6 +27,7 @@ header.appendChild(contact);
 
 document.body.appendChild(header);
 document.body.appendChild(homeContent());
+showDivs(1);
 
 console.log("This is a test");
 
@@ -38,6 +40,7 @@ menu.addEventListener('click', () => {
 restLogo.addEventListener('click', () => {
   document.body.removeChild(document.querySelector('#content'));
   document.body.appendChild(homeContent());
+  showDivs(1);
 })
 
 contact.addEventListener('click', () => {

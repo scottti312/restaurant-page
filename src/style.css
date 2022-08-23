@@ -52,3 +52,15 @@ body {
 #header #logo {
   cursor: pointer;
 }
+
+#content {
+  display: flex;
+  justify-content: center;
+}
+
+#content img {
+  float: left;
+  width: 1200px;
+  height: 700px;
+  object-fit:cover;
+}
