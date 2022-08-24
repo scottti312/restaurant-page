@@ -41,7 +41,7 @@ export function homeContent() {
   })
 
   let welcome = document.createElement('h2');
-  welcome.innerText = 'Welcome to the restaurant lorem ipsum this is some test text. 1981 yeah.'
+  welcome.innerText = 'Welcome to the restaurant lorem ipsum this is some test text. Fine dining since 1962.';
   let about = document.createElement('p');
   about.innerText = 'This is a restaurant that sells food. We make fancy food in small portions. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 

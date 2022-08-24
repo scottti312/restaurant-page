@@ -131,6 +131,20 @@ body {
  * ========== Menu Section ==========
  */
 
+.food-time button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  width: 160px;
+  margin: 40px 0px 40px 0px;
+  font-family: "Palatino Linotype","Book Antiqua","Palatino","serif";
+}
+
+.food-time button:hover {
+  background-color: var(--main-fg);
+}
+
 #dinner, #lunch, #dessert {
   display: flex;
   flex-direction: column;
@@ -143,8 +157,17 @@ body {
   padding: 50px;
 }
 
-#footer {
+.item {
+  font-family: 'Brevia';
+  font-weight: 100;
+  padding-bottom: 8px;
+}
 
+.description {
+  font-family: "Palatino Linotype","Book Antiqua","Palatino","serif";
+}
+
+#footer {
   display: flex;
   justify-content: center;
   align-items: center;

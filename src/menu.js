@@ -5,6 +5,7 @@ export default function menuContent() {
   let dinner = document.createElement('button');
   let lunch = document.createElement('button');
   let dessert = document.createElement('button');
+  foodTime.classList.add('food-time');
   dinner.innerHTML = 'DINNER';
   lunch.innerHTML = 'LUNCH';
   dessert.innerHTML = 'DESSERT';
@@ -17,22 +18,33 @@ export default function menuContent() {
   let lunchMenu = lunchContent();
   let dessertMenu = dessertContent();
   content.appendChild(dinnerMenu);
+  dinner.style.backgroundColor = '#C0AB68';
+
   dinner.addEventListener('click', () => {
     if (!document.getElementById('dinner')) {
       content.removeChild(content.lastChild);
       content.appendChild(dinnerMenu);
+      dinner.style.backgroundColor = '#C0AB68';
+      lunch.style.backgroundColor = 'transparent';
+      dessert.style.backgroundColor = 'transparent';
     }
   });
   lunch.addEventListener('click', () => {
     if (!document.getElementById('lunch')) {
       content.removeChild(content.lastChild);
       content.appendChild(lunchMenu);
+      dinner.style.backgroundColor = 'transparent';
+      lunch.style.backgroundColor = '#C0AB68';
+      dessert.style.backgroundColor = 'transparent';
     }
   });
   dessert.addEventListener('click', () => {
     if (!document.getElementById('dessert')) {
       content.removeChild(content.lastChild);
       content.appendChild(dessertMenu);
+      dinner.style.backgroundColor = 'transparent';
+      lunch.style.backgroundColor = 'transparent';
+      dessert.style.backgroundColor = '#C0AB68';
     }
   });
   return content;
