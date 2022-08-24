@@ -18,7 +18,6 @@ menu.classList.add('menu');
 contact.classList.add('contact');
 container.id = 'container';
 
-
 menu.textContent = 'Menu';
 contact.textContent = 'Contact';
 
@@ -32,13 +31,10 @@ footer.innerText = 'Made by Scott Ti. 2022'
 container.appendChild(homeContent());
 container.appendChild(footer);
 
-
 document.body.appendChild(header);
 document.body.appendChild(container);
 
 showDivs(1);
-
-
 
 menu.addEventListener('click', () => {
   container.removeChild(document.querySelector('#content'));

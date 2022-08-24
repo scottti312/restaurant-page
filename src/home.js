@@ -54,7 +54,6 @@ export function homeContent() {
   hours.appendChild(weekdays);
   hours.appendChild(weekends);
 
-
   content.appendChild(slideshowContainer);
   content.appendChild(welcome);
   content.appendChild(about);
