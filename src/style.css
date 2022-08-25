@@ -141,10 +141,6 @@ body {
   font-family: "Palatino Linotype","Book Antiqua","Palatino","serif";
 }
 
-.food-time button:hover {
-  background-color: var(--main-fg);
-}
-
 #dinner, #lunch, #dessert {
   display: flex;
   flex-direction: column;
@@ -165,6 +161,25 @@ body {
 
 .description {
   font-family: "Palatino Linotype","Book Antiqua","Palatino","serif";
+}
+
+/*
+ * ========== Contact Section ==========
+ */
+
+#contact {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 50px 20px 50px;
+  line-height: 1.6em;
+  margin-top: 20vh;
+  font-family: "Palatino Linotype","Book Antiqua","Palatino","serif";
+}
+
+#intro {
+  padding-bottom: 10px;
+  font-size: 1.2em;
+  border-bottom: 1px solid var(--main-fg);
+  margin-bottom: 30px;
 }
 
 #footer {
